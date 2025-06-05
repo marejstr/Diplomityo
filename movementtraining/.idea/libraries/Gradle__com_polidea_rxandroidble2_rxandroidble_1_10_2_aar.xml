@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="Gradle: com.polidea.rxandroidble2:rxandroidble:1.10.2@aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/13702c27095baa5d4db1cade0371b99f/transformed/jetified-rxandroidble-1.10.2/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/13702c27095baa5d4db1cade0371b99f/transformed/jetified-rxandroidble-1.10.2/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/13702c27095baa5d4db1cade0371b99f/transformed/jetified-rxandroidble-1.10.2/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.polidea.rxandroidble2/rxandroidble/1.10.2/ae9d6ec4495589f893a5dac02c6328b49b630ad0/rxandroidble-1.10.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.polidea.rxandroidble2/rxandroidble/1.10.2/8c3cf6635a5008b1cf3e4120ed72b7faaa0f80cb/rxandroidble-1.10.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

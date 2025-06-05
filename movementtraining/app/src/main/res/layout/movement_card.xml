@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="movement"
+            type="fi.marejstr.movementtraining.Movement" />
+        <variable
+            name="movementRecordClickListener"
+            type="fi.marejstr.movementtraining.adapters.MovementRecordClickListener" />
+    </data>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/movementNameText"
+                style="@style/TextAppearance.Headline6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Movement 1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/statusText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                tools:text="Not Recorded"
+                app:layout_constraintStart_toStartOf="@+id/movementNameText"
+                app:layout_constraintTop_toBottomOf="@+id/movementNameText" />
+
+            <Button
+                android:id="@+id/recordButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="8dp"
+                android:text="Record movement"
+                android:onClick="@{() -> movementRecordClickListener.onClick(movement)}"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/statusText" />
+
+            <ImageView
+                android:id="@+id/imageNotCompleted"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="16dp"
+                app:tint="#DA5B5B"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/statusText"
+                app:srcCompat="@drawable/ic_outline_cancel_24" />
+
+            <ImageView
+                android:id="@+id/imageCompleted"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="16dp"
+                app:tint="#4BAF47"
+                android:visibility="invisible"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/statusText"
+                app:srcCompat="@drawable/ic_outline_check_circle_24" />
+
+            <!--style="@style/Widget.MaterialComponents.Button.OutlinedButton"-->
+
+            <!--
+            <ImageView
+                android:id="@+id/infoIcon"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginEnd="16dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="@{() -> movementInfoClickListener.onClick(movement)}"
+                app:tint="#777777"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/movementNameText"
+                app:srcCompat="@drawable/ic_outline_info_24"
+                />
+
+            <Button
+                android:id="@+id/deleteButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:text="Delete measurement"
+                android:enabled="@{deleteEnabled}"
+                app:layout_constraintEnd_toStartOf="@+id/recordButton"
+                app:layout_constraintTop_toTopOf="@+id/recordButton" />
+                -->
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</layout>

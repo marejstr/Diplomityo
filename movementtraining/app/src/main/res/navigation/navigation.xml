@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="fi.marejstr.movementtraining.MainFragment"
+        android:label="Movement training"
+        >
+        <action
+            android:id="@+id/action_mainFragment_to_setupFragment"
+            app:destination="@id/setupFragment"
+            app:enterAnim="@anim/slide_in_from_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_from_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/movementFragment"
+        android:name="fi.marejstr.movementtraining.MovementFragment"
+        android:label="Record movements" >
+        <action
+            android:id="@+id/action_movementFragment_to_recordFragment"
+            app:destination="@id/recordFragment"
+            app:enterAnim="@anim/slide_in_from_right"
+            app:exitAnim="@anim/stay_in_place"
+            app:popEnterAnim="@anim/stay_in_place"
+            app:popExitAnim="@anim/slide_out_right"
+            />
+        <action
+            android:id="@+id/action_movementFragment_to_helpFragment"
+            app:destination="@id/helpFragment"
+            app:enterAnim="@anim/slide_in_from_right"
+            app:exitAnim="@anim/stay_in_place"
+            app:popEnterAnim="@anim/stay_in_place"
+            app:popExitAnim="@anim/slide_out_right"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/helpFragment"
+        android:name="fi.marejstr.movementtraining.HelpFragment"
+        android:label="User Guide" />
+    <fragment
+        android:id="@+id/recordFragment"
+        android:name="fi.marejstr.movementtraining.RecordFragment"
+        android:label="Record Movement" />
+    <fragment
+        android:id="@+id/setupFragment"
+        android:name="fi.marejstr.movementtraining.SetupFragment"
+        android:label="Connect to sensors"
+        >
+        <action
+            android:id="@+id/action_setupFragment_to_movementFragment"
+            app:destination="@id/movementFragment"
+            app:enterAnim="@anim/slide_in_from_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_from_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_setupFragment_to_helpFragment"
+            app:destination="@id/helpFragment"
+            app:enterAnim="@anim/slide_in_from_right"
+            app:exitAnim="@anim/stay_in_place"
+            app:popEnterAnim="@anim/stay_in_place"
+            app:popExitAnim="@anim/slide_out_right"
+            />
+    </fragment>
+</navigation>

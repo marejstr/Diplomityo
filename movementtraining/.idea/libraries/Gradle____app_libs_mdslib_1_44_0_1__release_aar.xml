@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: ./app/libs/mdslib-1.44.0(1)-release.aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/7fd9213b073d245f5a2349fc82f336c8/transformed/jetified-mdslib-1.44.0(1)-release/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/7fd9213b073d245f5a2349fc82f336c8/transformed/jetified-mdslib-1.44.0(1)-release/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/7fd9213b073d245f5a2349fc82f336c8/transformed/jetified-mdslib-1.44.0(1)-release/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
